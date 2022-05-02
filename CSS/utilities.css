@@ -4,7 +4,7 @@
 }
 
 .text-secondary {
-  color:#0284d0
+  color: #0284d0
 }
 
 /* Button */
@@ -22,20 +22,26 @@
   opacity: 0.9;
 }
 
-.btn-primary, .bg-primary {
+.btn-primary,
+.bg-primary {
   background-color: #28a745;
   color: #fff;
 }
 
-.btn-secondary, .bg-secondary {
+.btn-secondary,
+.bg-secondary {
   background-color: #0284d0;
   color: #fff;
 }
-.btn-dark, .bg-dark {
+
+.btn-dark,
+.bg-dark {
   background-color: #333;
   color: #fff;
 }
-.btn-light, .bg-light {
+
+.btn-light,
+.bg-light {
   background-color: #f4f4f4;
   color: #333;
 }
@@ -53,8 +59,8 @@
   align-items: center;
   height: 100%;
 }
- 
-.flex-items > div {
+
+.flex-items>div {
   padding: 20px;
 }
 
@@ -138,7 +144,7 @@
 }
 
 .flex-grid .column {
-    flex:25%;
-    max-width: 25%;
-    padding: 0 4px;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }
