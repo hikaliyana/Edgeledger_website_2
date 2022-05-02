@@ -22,7 +22,8 @@ a {
   text-decoration: none;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 300;
   line-height: 1.2;
 }
@@ -48,6 +49,12 @@ img {
   position: fixed;
   top: 0px;
   padding: 0 30px;
+  font-variant: small-caps;
+  transition: 0.5s;
+}
+
+.navbar.top {
+  background: transparent;
 }
 
 .navbar a {
@@ -110,6 +117,11 @@ img {
   z-index: 10;
 }
 
+.hero.blog {
+  background: url(../images/home/blog.jpg) no-repeat center center/cover;
+  height: 30vh;
+}
+
 /* Icons */
 .icons {
   padding: 30px;
@@ -163,8 +175,31 @@ img {
 }
 
 .callback-form .btn {
-    padding: 12px 0;
-    margin-top: 20px;
+  padding: 12px 0;
+  margin-top: 20px;
+}
+
+/* Post */
+.post {
+  padding: 50px 30px;
+}
+
+.post h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: #ccc solid 1px;
+}
+
+.post .meta {
+  margin-bottom: 30px;
+}
+
+.post img {
+  width: 300px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 30px;
 }
 
 /* Footer */
@@ -175,7 +210,7 @@ img {
   justify-content: center;
   text-align: center;
   height: 200px;
-  
+
 }
 
 .footer a {
@@ -186,10 +221,39 @@ img {
   color: #28a745;
 }
 
-.footer .social > * {
+.footer .social>* {
   margin-left: 30px;
 }
 
 .footer p {
   padding-left: 30px;
+}
+
+
+/* Mobile */
+@media(max-width:768px) {
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 10px 10px;
+    margin: 0 3px;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .flex-columns .column,
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .team img {
+    width: 70%;
+  }
 }
